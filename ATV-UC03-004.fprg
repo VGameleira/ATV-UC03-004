@@ -4,9 +4,9 @@
         <attribute name="name" value="ATV-UC03-004"/>
         <attribute name="authors" value="vinicius.sgameleira"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-05-13 03:25:22 "/>
+        <attribute name="saved" value="2025-05-13 04:04:52 "/>
         <attribute name="created" value="dmluaWNpdXMuc2dhbWVsZWlyYTtTQU4wNzE3NDczVzExLTE7MjAyNS0wNS0xMzsiMDI6NTE6MjAgIjs0MDIz"/>
-        <attribute name="edited" value="dmluaWNpdXMuc2dhbWVsZWlyYTtTQU4wNzE3NDczVzExLTE7MjAyNS0wNS0xMzsiMDM6MjU6MjIgIjsyOzQxMzY="/>
+        <attribute name="edited" value="dmluaWNpdXMuc2dhbWVsZWlyYTtTQU4wNzE3NDczVzExLTE7MjAyNS0wNS0xMzsiMDQ6MDQ6NTIgIjszOzQxMzg="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -23,18 +23,18 @@
                 <else>
                     <if expression="num1 &lt; num2">
                         <then>
-                            <output expression="num1 &amp; &quot;- In&#237;cio&quot;" newline="True"/>
+                            <output expression="num1 &amp; &quot; - In&#237;cio&quot;" newline="True"/>
                             <for variable="i" start="num1 + 1" end="num2 - 1" direction="inc" step="1">
                                 <output expression="i" newline="True"/>
                             </for>
-                            <output expression="num2 &amp; &quot;- Fim&quot;" newline="True"/>
+                            <output expression="num2 &amp; &quot; - Fim&quot;" newline="True"/>
                         </then>
                         <else>
-                            <output expression="num1 &amp; &quot;- In&#237;cio&quot;" newline="True"/>
+                            <output expression="num1 &amp; &quot; - In&#237;cio&quot;" newline="True"/>
                             <for variable="i" start="num1 - 1" end="num2 - 1" direction="dec" step="1">
                                 <output expression="i" newline="True"/>
                             </for>
-                            <output expression="num2 &amp; &quot;- Fim&quot;" newline="True"/>
+                            <output expression="num2 &amp; &quot; - Fim&quot;" newline="True"/>
                         </else>
                     </if>
                 </else>
