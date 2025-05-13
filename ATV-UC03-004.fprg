@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ATV-UC03-004"/>
+        <attribute name="authors" value="vinicius.sgameleira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-13 03:08:21 "/>
+        <attribute name="created" value="dmluaWNpdXMuc2dhbWVsZWlyYTtTQU4wNzE3NDczVzExLTE7MjAyNS0wNS0xMzsiMDI6NTE6MjAgIjs0MDIz"/>
+        <attribute name="edited" value="dmluaWNpdXMuc2dhbWVsZWlyYTtTQU4wNzE3NDczVzExLTE7MjAyNS0wNS0xMzsiMDM6MDg6MjEgIjsxOzQxMzU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, resultado, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro n&#250;mero:&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Digite o segundo n&#250;mero:&quot;" newline="True"/>
+            <input variable="num2"/>
+            <if expression="num1 == num2">
+                <then>
+                    <output expression="&quot;Imposs&#237;vel incrementar ou decrementar!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="num1 &lt; num2">
+                        <then>
+                            <output expression="num1 &amp; &quot;- In&#237;cio&quot;" newline="True"/>
+                            <for variable="i" start="num1" end="(num2 - 1)" direction="inc" step="1">
+                                <output expression="i" newline="True"/>
+                            </for>
+                            <output expression="num2 &amp; &quot;- Fim&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="num1 &gt; num2">
+                                <then>
+                                    <output expression="num1 &amp; &quot;- In&#237;cio&quot;" newline="True"/>
+                                    <for variable="i" start="num1" end="(num2 - 1)" direction="dec" step="1">
+                                        <output expression="i" newline="True"/>
+                                    </for>
+                                    <output expression="num2 &amp; &quot;- Fim&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
